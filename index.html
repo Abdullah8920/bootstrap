@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brooklyn Portfolio</title>
 
+    <!-- Bootstrap & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- ================= NAVBAR ================= -->
-    <nav class="navbar navbar-expand-lg bg-white py-3">
+    <nav class="navbar navbar-expand-lg bg-white py-3 fixed-top shadow-sm">
         <div class="container">
-
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                 <span class="logo-circle">B</span>
                 <span class="logo-text">Brooklyn</span>
@@ -36,16 +35,17 @@
                     <li class="nav-item"><a class="nav-link" href="#">Process</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
                 </ul>
 
                 <div class="ms-lg-4">
-                    <a href="#" class="btn btn-contact px-4 py-2">Contact</a>
+                    <a href="#contact" class="btn btn-contact px-4 py-2">Contact</a>
                 </div>
             </div>
-
         </div>
     </nav>
+
+    <!-- Navbar ke neeche content chup na jaye isliye padding -->
+    <div style="padding-top: 80px;"></div>
 
     <div class="main-wrapper">
         <!-- ================= SECTION 1: INTRO ================= -->
@@ -54,12 +54,10 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <h1 class="hero-title">Hello, I’m <br> Brooklyn Gilbert</h1>
-
-                        <!-- Original Paragraph 1 -->
                         <p class="hero-text">
                             I'm a Freelance <span class="highlight">UI/UX Designer</span> and
                             <span class="highlight">Developer</span> based in London, England.
-                            I strives to build immersive and beautiful web applications through
+                            I strive to build immersive and beautiful web applications through
                             carefully crafted code and user-centric design.
                         </p>
 
@@ -72,17 +70,18 @@
                             </div>
                             <div class="stat-box">
                                 <h3>250+</h3>
-                                <p>Projects Completed</p>
+                                <p>Projects</p>
                             </div>
                             <div class="stat-box">
                                 <h3>58</h3>
-                                <p>Happy Clients</p>
+                                <p>Clients</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
                         <div class="hero-image-wrapper">
+                            <!-- Placeholder image, replace with yours -->
                             <img src="./image/person-CqOZwXV1.png" alt="Brooklyn Gilbert">
                         </div>
                     </div>
@@ -90,15 +89,11 @@
             </div>
         </section>
 
-        <!-- LARGE GAP BETWEEN SECTIONS -->
-        <div class="section-spacer"></div>
-
         <!-- ================= SECTION 2: PROFESSIONAL ================= -->
-        <section class="hero-two pb-5">
+        <section class="hero-two">
             <div class="container">
                 <div class="hero-box p-5">
                     <div class="row align-items-center">
-                        <!-- Left Image Card -->
                         <div class="col-lg-5 text-center mb-4 mb-lg-0">
                             <div class="image-card mx-auto">
                                 <img src="./image/person-CqOZwXV1.png" alt="User" class="img-fluid">
@@ -107,24 +102,19 @@
                                     <a href="#"><i class="fa-brands fa-dribbble"></i></a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa-brands fa-behance"></i></a>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Right Content (All Paragraphs Restored) -->
                         <div class="col-lg-7 ps-lg-5">
                             <h1 class="fw-bold display-6">I am Professional User <br> Experience Designer</h1>
-
                             <p class="text-muted mt-3">
-                                I design and develop services for customers specializing creating stylish,
+                                I design and develop services for customers specializing in creating stylish,
                                 modern websites, web services and online stores.
                             </p>
-
                             <p class="text-muted">
                                 My passion is to design digital user experiences.
                             </p>
-
                             <div class="mt-4">
                                 <a href="#" class="btn btn-primary px-4 py-2 me-3">My Projects</a>
                                 <a href="#" class="btn btn-outline-secondary px-4 py-2">
@@ -136,88 +126,67 @@
                 </div>
             </div>
         </section>
-    </div><!-- ================= WORK PROCESS SECTION ================= -->
+    </div>
+
+    <!-- ================= WORK PROCESS SECTION ================= -->
     <section class="process-section py-5">
         <div class="container py-5">
-
-
-            <div class="row align-items-center" style="padding-top: 100px; ">
+            <div class="row align-items-center" style="padding-top: 145px">
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <h1 class="fw-bold display-4 mb-4">Work Process</h1>
                     <p class="text-muted lead mb-4">
                         Driven by design and powered by code, I create digital interfaces that feel intuitive and
                         perform seamlessly.
-                        Every layout, animation, and component is crafted with intention.
                     </p>
                     <p class="text-muted">
-                        I blend clean design with efficient code to build engaging, user-friendly web experiences that
-                        stand out.
+                        I blend clean design with efficient code to build engaging, user-friendly web experiences.
                     </p>
                 </div>
 
                 <div class="col-lg-6 offset-lg-1">
                     <div class="row g-4">
-
                         <div class="col-md-6">
                             <div class="process-card p-4 mb-4">
-                                <div class="process-icon mb-4">
-                                    <i class="fa-solid fa-calendar-check"></i>
-                                </div>
+                                <div class="process-icon mb-4"><i class="fa-solid fa-calendar-check"></i></div>
                                 <h4 class="fw-bold">1. Research</h4>
-                                <p class="text-muted mb-0">Design meets function in every pixel, blending clarity with
-                                    intuitive motion.</p>
+                                <p class="text-muted mb-0">Design meets function in every pixel.</p>
                             </div>
                             <div class="process-card p-4">
-                                <div class="process-icon mb-4">
-                                    <i class="fa-solid fa-pen-nib"></i>
-                                </div>
+                                <div class="process-icon mb-4"><i class="fa-solid fa-pen-nib"></i></div>
                                 <h4 class="fw-bold">3. Design</h4>
-                                <p class="text-muted mb-0">I design seamless digital experiences with precision and a
-                                    touch of elegance.</p>
+                                <p class="text-muted mb-0">Seamless digital experiences with precision.</p>
                             </div>
                         </div>
 
                         <div class="col-md-6 mt-md-5">
                             <div class="process-card p-4 mb-4">
-                                <div class="process-icon mb-4">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                </div>
+                                <div class="process-icon mb-4"><i class="fa-solid fa-chart-line"></i></div>
                                 <h4 class="fw-bold">2. Analyze</h4>
-                                <p class="text-muted mb-0">Crafting clean, thoughtful interfaces where form flows
-                                    seamlessly into function.</p>
+                                <p class="text-muted mb-0">Crafting clean, thoughtful interfaces.</p>
                             </div>
                             <div class="process-card p-4">
-                                <div class="process-icon mb-4">
-                                    <i class="fa-solid fa-laptop-code"></i>
-                                </div>
+                                <div class="process-icon mb-4"><i class="fa-solid fa-laptop-code"></i></div>
                                 <h4 class="fw-bold">4. Launch</h4>
-                                <p class="text-muted mb-0">I craft digital products where thoughtful design meets
-                                    performance-driven development.</p>
+                                <p class="text-muted mb-0">Performance-driven development.</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
     <!-- ================= PORTFOLIO SECTION ================= -->
     <section class="portfolio-section">
         <div class="container">
-
-            <!-- Section Header -->
             <div class="text-center mb-5">
                 <h2 class="fw-bold display-5 mb-3">Portfolio</h2>
                 <p class="text-muted mx-auto" style="max-width: 600px;">
-                    Here’s a selection of my recent work, showcasing my skills in creating user-centric and visually
-                    appealing interfaces.
+                    Here’s a selection of my recent work, showcasing my skills in creating user-centric interfaces.
                 </p>
             </div>
 
-            <!-- Portfolio Grid -->
             <div class="row g-4">
-
                 <!-- Card 1 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-card">
@@ -228,14 +197,12 @@
                         <div class="card-content p-4">
                             <span class="category">UI/UX DESIGN</span>
                             <h4 class="project-title mt-2">Product Admin Dashboard</h4>
-                            <p class="text-muted small mb-4">I focus on crafting smooth, responsive interfaces that
-                                balance aesthetic appeal with practical functionality.</p>
+                            <p class="text-muted small mb-4">Crafting smooth, responsive interfaces.</p>
                             <a href="#" class="btn-case-study">Case Study <i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Card 2 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-card">
@@ -246,14 +213,12 @@
                         <div class="card-content p-4">
                             <span class="category">UI/UX DESIGN</span>
                             <h4 class="project-title mt-2">Fintech Mobile App</h4>
-                            <p class="text-muted small mb-4">Designed an intuitive dashboard for product management,
-                                emphasizing clarity and user efficiency.</p>
+                            <p class="text-muted small mb-4">Intuitive dashboard for product management.</p>
                             <a href="#" class="btn-case-study">Case Study <i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Card 3 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-card">
@@ -264,14 +229,12 @@
                         <div class="card-content p-4">
                             <span class="category">UI/UX DESIGN</span>
                             <h4 class="project-title mt-2">E-Commerce Website</h4>
-                            <p class="text-muted small mb-4">Developed a modern admin panel with a focus on usability
-                                and seamless navigation for end users.</p>
+                            <p class="text-muted small mb-4">Focus on usability and seamless navigation.</p>
                             <a href="#" class="btn-case-study">Case Study <i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Card 4 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-card">
@@ -282,14 +245,12 @@
                         <div class="card-content p-4">
                             <span class="category">UI/UX DESIGN</span>
                             <h4 class="project-title mt-2">Corporate Office Design</h4>
-                            <p class="text-muted small mb-4">Created a responsive dashboard layout that adapts smoothly
-                                across devices and screen sizes and so on.</p>
+                            <p class="text-muted small mb-4">Responsive dashboard layout across devices.</p>
                             <a href="#" class="btn-case-study">Case Study <i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Card 5 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-card">
@@ -299,40 +260,36 @@
                         <div class="card-content p-4">
                             <span class="category">UI/UX DESIGN</span>
                             <h4 class="project-title mt-2">Game Designing</h4>
-                            <p class="text-muted small mb-4">Implemented interactive charts and widgets to visualize
-                                product data effectively for stakeholders.</p>
+                            <p class="text-muted small mb-4">Interactive charts to visualize product data.</p>
                             <a href="#" class="btn-case-study">Case Study <i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Card 6 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-card">
                         <div class="card-image">
-                            <img src="./image/app.jfif" alt="Project 6">
+                            <img src="./image/Capture.JPG" alt="Project 6">
                         </div>
                         <div class="card-content p-4">
                             <span class="category">UI/UX DESIGN</span>
                             <h4 class="project-title mt-2">Software Apps</h4>
-                            <p class="text-muted small mb-4">Enhanced user experience by streamlining workflows and
-                                optimizing interface components and so on.</p>
+                            <p class="text-muted small mb-4">Enhanced user experience by streamlining workflows.</p>
                             <a href="#" class="btn-case-study">Case Study <i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary px-5 py-3">More Project</a>
+                <a href="#" class="btn btn-primary px-5 py-3">More Projects</a>
             </div>
-
         </div>
     </section>
-    <!-- ================= CALL TO ACTION (CTA) ================= -->
+
+    <!-- ================= CTA SECTION ================= -->
     <section class="cta-section text-center">
         <div class="container">
             <h2 class="display-5 fw-bold text-white mb-3">Do you have a Project Idea?<br>Let's discuss your project!
@@ -341,7 +298,7 @@
                 I'm always open to discussing new projects and creative ideas. Let's connect and build something amazing
                 together.
             </p>
-            <a href="#" class="btn btn-cta">
+            <a href="#contact" class="btn btn-cta">
                 Let's work Together <i class="fa-solid fa-arrow-right ms-2"></i>
             </a>
         </div>
@@ -350,8 +307,6 @@
     <!-- ================= BLOG SECTION ================= -->
     <section class="blog-section">
         <div class="container">
-
-            <!-- Blog Header -->
             <div class="text-center mb-5">
                 <h2 class="fw-bold display-5 mb-3">Blog</h2>
                 <p class="text-muted mx-auto" style="max-width: 500px;">
@@ -360,14 +315,13 @@
                 </p>
             </div>
 
-            <!-- Blog Grid -->
             <div class="row g-4">
-
                 <!-- Blog 1 -->
                 <div class="col-lg-3 col-md-6">
                     <div class="blog-card">
                         <div class="blog-image-wrapper">
-                            <img src="./image/blog2.jpg" alt="Blog 1">
+                            <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=500&auto=format&fit=crop"
+                                alt="Blog 1">
                         </div>
                         <div class="blog-content pt-4">
                             <div class="blog-meta mb-2">
@@ -377,7 +331,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Blog 2 -->
                 <div class="col-lg-3 col-md-6">
                     <div class="blog-card">
@@ -386,29 +339,26 @@
                         </div>
                         <div class="blog-content pt-4">
                             <div class="blog-meta mb-2">
-                                <span>15 Nov, 2023</span> <span class="mx-1">•</span> <sp-an>18 Comments</span>
+                                <span>15 Nov, 2023</span> <span class="mx-1">•</span> <span>18 Comments</span>
                             </div>
                             <h5 class="fw-bold mb-3">Responsive Design: Adapting to All Devices</h5>
                         </div>
                     </div>
                 </div>
-
                 <!-- Blog 3 -->
                 <div class="col-lg-3 col-md-6">
                     <div class="blog-card">
                         <div class="blog-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1550063873-ab792950096b?q=80&w=500&auto=format&fit=crop"
-                                alt="Blog 3">
+                            <img src="./image/blog2.jpg" alt="Blog 3">
                         </div>
                         <div class="blog-content pt-4">
                             <div class="blog-meta mb-2">
                                 <span>02 Dec, 2023</span> <span class="mx-1">•</span> <span>54 Comments</span>
                             </div>
-                            <h5 class="fw-bold mb-3">Streamlining Workflows with UI/UX Best Practices</h5>
+                            <h5 class="fw-bold mb-3">Streamlining Workflows with UI/UX</h5>
                         </div>
                     </div>
                 </div>
-
                 <!-- Blog 4 -->
                 <div class="col-lg-3 col-md-6">
                     <div class="blog-card">
@@ -419,11 +369,10 @@
                             <div class="blog-meta mb-2">
                                 <span>10 Jan, 2024</span> <span class="mx-1">•</span> <span>120 Comments</span>
                             </div>
-                            <h5 class="fw-bold mb-3">Optimizing Interface Components for Performance</h5>
+                            <h5 class="fw-bold mb-3">Optimizing Interface Components</h5>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="slider-dots text-center mt-5">
@@ -431,15 +380,44 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-
         </div>
     </section>
 
-    <!-- ================= TESTIMONIAL SECTION (FIXED) ================= -->
+    <!-- ================= HAPPY CLIENTS (Infinite Scroll) ================= -->
+    <section class="clients-section text-center">
+        <div class="container mb-5">
+            <h2 class="fw-bold display-6 mb-3">Happy Clients</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">
+                I've had the pleasure of working with a diverse range of companies, from startups to established brands.
+            </p>
+        </div>
+
+        <div class="logo-slider">
+            <div class="logo-track">
+                <!-- SET 1 -->
+                <div class="slide brand-gray"><i class="fa-brands fa-google me-2"></i> Google</div>
+                <div class="slide brand-gray"><i class="fa-brands fa-dribbble me-2"></i> Dribbble</div>
+                <div class="slide brand-linkedin"><span class="linked-text">Linked</span><span class="in-box">in</span>
+                </div>
+                <div class="slide brand-gray"><i class="fa-brands fa-amazon me-2"></i> amazon</div>
+                <div class="slide brand-gray"><i class="fa-brands fa-medium me-2"></i> Medium</div>
+                <div class="slide brand-gray"><i class="fa-brands fa-spotify me-2"></i> Spotify</div>
+
+                <!-- SET 2 (Duplicate) -->
+                <div class="slide brand-gray"><i class="fa-brands fa-google me-2"></i> Google</div>
+                <div class="slide brand-gray"><i class="fa-brands fa-dribbble me-2"></i> Dribbble</div>
+                <div class="slide brand-linkedin"><span class="linked-text">Linked</span><span class="in-box">in</span>
+                </div>
+                <div class="slide brand-gray"><i class="fa-brands fa-amazon me-2"></i> amazon</div>
+                <div class="slide brand-gray"><i class="fa-brands fa-medium me-2"></i> Medium</div>
+                <div class="slide brand-gray"><i class="fa-brands fa-spotify me-2"></i> Spotify</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL SECTION ================= -->
     <section class="testimonial-section text-center">
         <div class="container">
-
-            <!-- Header -->
             <div class="mb-5">
                 <h2 class="fw-bold display-5 mb-3">Testimonial</h2>
                 <p class="text-muted mx-auto" style="max-width: 600px;">
@@ -448,20 +426,16 @@
                 </p>
             </div>
 
-            <!-- Carousel Slider -->
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-
                 <div class="carousel-inner">
-
                     <!-- Slide 1 -->
                     <div class="carousel-item active">
-                        <!-- 🔥 ROW aur COL add kiya hai taake width collapse na ho 🔥 -->
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-md-10 col-12">
                                 <p class="quote-text fw-bold text-dark fs-5">
                                     "From the initial consultation to the final delivery, every step was handled
                                     professionally. The end result was a product that not only met our needs but also
-                                    impressed our stakeholders. Highly recommended!"
+                                    impressed our stakeholders."
                                 </p>
                                 <div class="mt-4">
                                     <h6 class="fw-bold mb-0 text-dark">Cather Howard</h6>
@@ -470,7 +444,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Slide 2 -->
                     <div class="carousel-item">
                         <div class="row justify-content-center">
@@ -487,7 +460,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Slide 3 -->
                     <div class="carousel-item">
                         <div class="row justify-content-center">
@@ -504,21 +476,172 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-                <!-- Custom Indicators (Dots) -->
                 <div class="carousel-indicators custom-indicators">
                     <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
                         class="active"></button>
                     <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
                 </div>
-
             </div>
+        </div>
+    </section>
+    <!-- ================= ONLY CONTACT FORM CARD ================= -->
+    <section class="contact-area py-5">
+        <div class="container">
+
+            <!-- WHITE CARD START -->
+            <div class="contact-box shadow-lg bg-white rounded-4 p-5">
+                <div class="row">
+
+                    <!-- LEFT SIDE: Contact Info -->
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h2 class="fw-bold text-dark mb-3">Let’s discuss your Project</h2>
+                        <p class="text-muted mb-5">
+                            I'm available for freelance work. Drop me a line if you have a project you think I'd be a
+                            good fit for.
+                        </p>
+
+                        <!-- Address -->
+                        <div class="d-flex mb-4">
+                            <div class="purple-icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="ms-3">
+                                <span class="d-block text-muted small">Address:</span>
+                                <h6 class="fw-bold text-dark">New Mexico, 31134</h6>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="d-flex mb-4">
+                            <div class="purple-icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="ms-3">
+                                <span class="d-block text-muted small">My Email:</span>
+                                <h6 class="fw-bold text-dark">mymail@mail.com</h6>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="d-flex mb-5">
+                            <div class="purple-icon-box">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="ms-3">
+                                <span class="d-block text-muted small">Call Me Now:</span>
+                                <h6 class="fw-bold text-dark">00-123 00000</h6>
+                            </div>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="social-small">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE: The Form -->
+                    <div class="col-lg-6 offset-lg-1">
+                        <p class="text-muted mb-4">
+                            I'm always open to discussing product design work or partnership opportunities.
+                        </p>
+
+                        <form>
+                            <!-- Name -->
+                            <div class="mb-4">
+                                <label class="lbl-msg">Name*</label>
+                                <input type="text" class="line-input">
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-4">
+                                <label class="lbl-msg">Email*</label>
+                                <input type="email" class="line-input">
+                            </div>
+
+                            <!-- Location -->
+                            <div class="mb-4">
+                                <label class="lbl-msg">Location*</label>
+                                <input type="text" class="line-input">
+                            </div>
+
+                            <!-- Budget & Subject -->
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <label class="lbl-msg">Budget*</label>
+                                    <input type="text" class="line-input">
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <label class="lbl-msg">Subject*</label>
+                                    <input type="text" class="line-input">
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mb-5">
+                                <label class="lbl-msg">Message*</label>
+                                <textarea class="line-input" rows="2"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-purple-sub px-4 py-2">
+                                Submit <i class="fa-regular fa-paper-plane ms-2"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- WHITE CARD END -->
 
         </div>
     </section>
+    <footer class="main-footer">
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- 1. LOGO (Left Side) -->
+                <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
+                    <a class="navbar-brand d-inline-flex align-items-center gap-2" href="#">
+                        <span class="logo-circle">B</span>
+                        <span class="logo-text text-white">Brooklyn</span>
+                    </a>
+                </div>
+
+                <!-- 2. LINKS (Center) -->
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mx-2"><a href="#" class="footer-link">Home</a></li>
+                        <li class="list-inline-item mx-2"><a href="#" class="footer-link">About</a></li>
+                        <li class="list-inline-item mx-2"><a href="#" class="footer-link">Process</a></li>
+                        <li class="list-inline-item mx-2"><a href="#" class="footer-link">Portfolio</a></li>
+                        <li class="list-inline-item mx-2"><a href="#" class="footer-link">Blog</a></li>
+                        <li class="list-inline-item mx-2"><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 text-center text-md-end">
+                    <p class="mb-0 text-white-50 small">Copyright © 2025 Picto.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 pt-4 border-top border-secondary border-opacity-25">
+                <p class="text-white-50 small mb-0">
+                    Developed with <i class="fa-solid fa-heart text-danger mx-1"></i> by <span
+                        class="text-white text-decoration-underline fw-bold">ThemeWagon</span>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

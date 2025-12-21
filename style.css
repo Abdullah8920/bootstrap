@@ -1,4 +1,3 @@
-/* ================= GLOBAL ================= */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,7 @@ body {
     color: #1d1d1f;
 }
 
-/* ================= NAVBAR ================= */
+
 .logo-circle {
     width: 40px;
     height: 40px;
@@ -49,11 +48,9 @@ body {
     color: #fff;
 }
 
-/* Sirf Background Shade Update Kiya Hai */
 .main-page-wrapper {
-    /* background-color: #ffffff; */
-    background-image:
-        radial-gradient(at 100% 0%, #f8f1ff 0%, transparent 50%),
+    background-color: #ffffff;
+    background-image: radial-gradient(at 100% 0%, #f8f1ff 0%, transparent 50%),
         radial-gradient(at 100% 100%, #e8faf8 0%, transparent 60%);
     background-attachment: fixed;
     overflow-x: hidden;
@@ -67,59 +64,13 @@ body {
         radial-gradient(at 100% 0%, #f4e2ff 0%, transparent 50%),
         radial-gradient(at 100% 100%, #e0f7f3 0%, transparent 50%);
 
-    /* background-repeat: no-repeat; */
 }
 
 .section-spacer {
     height: 130px;
-    /* background-image: radial-gradient(at 50% 80%, #e8faf8 0%, transparent 30%); */
-
-}
-
-.hero-btn,
-.btn-primary {
-    background: #7b2cff !important;
-    color: #fff !important;
-    border: none !important;
-    padding: 12px 30px;
-    border-radius: 8px;
-    font-weight: 500;
-}
-
-.hero-btn:hover,
-.btn-primary:hover {
-    background: #6219e1 !important;
-}
-
-.hero-two {
-    position: relative;
-    top: 125px;
 }
 
 
-.hero-image-wrapper {
-    position: relative;
-    display: inline-block;
-    padding: 15px;
-    border-radius: 34px;
-}
-
-.hero-image-wrapper::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 34px;
-    background: linear-gradient(135deg, #f3e8ff, #ffffff);
-    z-index: -1;
-}
-
-.hero-image-wrapper img {
-    border-radius: 22px;
-    max-width: 90%;
-    background: white;
-}
-
-/* ================= OTHER STYLES ================= */
 .hero-title {
     font-size: 56px;
     font-weight: 800;
@@ -138,6 +89,7 @@ body {
     font-weight: 600;
 }
 
+/* Hero Stats */
 .hero-stats {
     display: flex;
     gap: 20px;
@@ -168,10 +120,45 @@ body {
     color: white;
 }
 
+.hero-image-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 34px;
+}
+
+.hero-image-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 34px;
+    background: linear-gradient(135deg, #f3e8ff, #ffffff);
+    z-index: -1;
+}
+
+.hero-image-wrapper img {
+    border-radius: 22px;
+    max-width: 90%;
+    background: white;
+}
+
+
+.hero-two {
+    position: relative;
+    top: 125px;
+}
+
+@media (max-width: 991px) {
+    .hero-two {
+        margin-top: 50px;
+    }
+}
+
 .hero-box {
     background: #ffffff;
+
     border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .image-card {
@@ -197,16 +184,39 @@ body {
     color: #7b2cff;
     margin: 0 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Section Background */
+.social-icons a:hover {
+    background-color: #7b2cff;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(123, 44, 255, 0.3);
+}
+
+/* Buttons */
+.hero-btn,
+.btn-primary {
+    background: #7b2cff !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.hero-btn:hover,
+.btn-primary:hover {
+    background: #6219e1 !important;
+}
+
+/* ================= WORK PROCESS ================= */
 .process-section {
     background-color: #f3f4f6;
-    overflow: hidden;
-    /* Extra safety */
+    padding-top: 100px;
 }
 
-/* Card Styling */
 .process-card {
     background: #ffffff;
     border-radius: 20px;
@@ -224,7 +234,6 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon Box Styling */
 .process-icon {
     width: 60px;
     height: 60px;
@@ -238,28 +247,7 @@ body {
     align-self: flex-start;
 }
 
-.process-card h4 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.process-card p {
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-@media (max-width: 767px) {
-    .mt-md-5 {
-        margin-top: 0 !important;
-    }
-
-    .process-card {
-        min-height: auto;
-        /* Mobile pe height adjust hone dein */
-        padding: 30px !important;
-    }
-}
-
+/* ================= PORTFOLIO ================= */
 .portfolio-section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -280,7 +268,6 @@ body {
 .portfolio-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    /* Soft Shadow */
     border-color: transparent;
 }
 
@@ -315,11 +302,6 @@ body {
     margin-bottom: 10px;
 }
 
-.card-content p {
-    line-height: 1.6;
-    color: #6b7280;
-}
-
 .btn-case-study {
     display: inline-block;
     padding: 10px 24px;
@@ -338,18 +320,9 @@ body {
     border-color: #111;
 }
 
-.btn-case-study i {
-    transition: transform 0.3s ease;
-}
-
-.btn-case-study:hover i {
-    transform: translateX(5px);
-}
-
-/* ================= CTA SECTION (Dark Blue) ================= */
+/* ================= CTA SECTION ================= */
 .cta-section {
     background-color: #0f172a;
-    /* Dark Blue/Black jaisa image mein hai */
     padding: 100px 0;
 }
 
@@ -357,10 +330,8 @@ body {
     color: rgba(255, 255, 255, 0.6) !important;
 }
 
-/* CTA Button Styling */
 .btn-cta {
     background-color: #7b2cff;
-    /* Purple */
     color: #fff;
     padding: 14px 35px;
     border-radius: 8px;
@@ -371,25 +342,15 @@ body {
 
 .btn-cta:hover {
     background-color: #6219e1;
-    /* Darker Purple */
     color: #fff;
     transform: translateY(-3px);
-    /* Thoda upar uthega */
 }
 
-/* ================= BLOG SECTION ================= */
+/* ================= BLOG ================= */
 .blog-section {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #ffffff;
-}
-
-/* Blog Card Styling */
-.blog-card {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .blog-card:hover h5 {
@@ -400,7 +361,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Image Wrapper */
 .blog-image-wrapper {
     border-radius: 12px;
     overflow: hidden;
@@ -413,20 +373,6 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
-}
-
-.blog-meta {
-    font-size: 13px;
-    color: #9ca3af;
-    /* Light gray */
-    font-weight: 500;
-}
-
-.blog-content h5 {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #111;
-    transition: color 0.3s ease;
 }
 
 .slider-dots {
@@ -442,7 +388,6 @@ body {
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
-    transition: all 0.3s;
 }
 
 .dot.active {
@@ -451,55 +396,92 @@ body {
     border-radius: 10px;
 }
 
-.dot:hover {
-    background-color: #9ca3af;
+/* ================= HAPPY CLIENTS (Infinite Scroll) ================= */
+.clients-section {
+    padding: 80px 0;
+    background: #ffffff;
+    overflow: hidden;
+    /* Important */
 }
 
-/* ================= TESTIMONIAL RECOVERY FIX ================= */
+.logo-slider {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    /* Elements ek line mein */
+}
 
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: max-content;
+    /* 🔥 Logic: Translate -50% works perfectly because we duplicated content */
+    animation: logoScroll 30s linear infinite;
+}
+
+@keyframes logoScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.brand-gray {
+    color: #555;
+    transition: color 0.3s;
+}
+
+.brand-gray:hover {
+    color: #000;
+}
+
+.brand-linkedin {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+.in-box {
+    background: #0077b5;
+    color: #fff;
+    padding: 0px 6px;
+    border-radius: 4px;
+    margin-left: 3px;
+    font-size: 24px;
+}
+
+/* ================= TESTIMONIALS ================= */
 .testimonial-section {
     padding-top: 100px;
     padding-bottom: 120px;
     background-color: #ffffff;
-    position: relative;
-    /* Safety */
 }
 
-/* 1. Carousel ko Gayab hone se bachane ke liye Height */
+/* Ensure Carousel Height */
 .carousel-inner {
     min-height: 300px;
-    /* Kam se kam itni jagah lega */
-    overflow: visible;
-    /* Content ko katne nahi dega */
 }
 
-/* 2. Slide ko Visible karna */
-.carousel-item {
-    padding-bottom: 50px;
-    /* Dots ke liye jagah */
-    transition: transform 0.6s ease-in-out;
-    /* Smooth slide */
-}
-
-/* 3. Text ko Center aur Dark karna */
 .quote-text {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #000000 !important;
-    /* Zabardasti Black Color */
-    font-weight: 500;
-    max-width: 800px;
-    /* Line lambi hone se rokega */
-    margin: 0 auto;
-    /* Center karega */
-    display: block;
-    /* Block banayega taake squish na ho */
+    line-height: 1.8;
+    color: #333;
 }
 
-/* 4. Dots Styling (Wahi purani wali) */
 .custom-indicators {
-    bottom: -20px;
-    /* Thoda upar kiya taake dikhe */
+    bottom: -40px;
 }
 
 .custom-indicators button {
@@ -516,4 +498,286 @@ body {
     width: 30px !important;
     border-radius: 10px;
     background-color: #111 !important;
+}
+
+/* ================= CONTACT SECTION (Missing added) ================= */
+.contact-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f9fafb;
+}
+
+.text-purple {
+    color: #7b2cff;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #7b2cff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-two {
+        margin-top: 30px;
+    }
+
+    .process-section {
+        padding-top: 60px;
+    }
+
+    .slide {
+        font-size: 22px;
+    }
+
+    .brand-linkedin {
+        font-size: 22px;
+    }
+
+    .in-box {
+        font-size: 20px;
+    }
+
+    .mt-md-5 {
+        margin-top: 0 !important;
+    }
+}
+
+.footer-wrapper {
+    background-color: #1f2937;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    margin-top: 150px;
+    position: relative;
+}
+
+.contact-card {
+    background-color: #ffffff !important;
+    /* 🔥 Zabardasti White karega */
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: -300px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.form-line {
+    border: none !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    border-radius: 0 !important;
+    padding: 10px 0 !important;
+    background: transparent !important;
+    color: #333 !important;
+}
+
+.form-line:focus {
+    border-color: #7b2cff !important;
+    box-shadow: none !important;
+}
+
+/* Labels */
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* 4. Icons & Buttons */
+.icon-box-purple {
+    width: 45px;
+    height: 45px;
+    background-color: #f3e8ff;
+    color: #7b2cff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.btn-purple {
+    background-color: #9333ea;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-purple:hover {
+    background-color: #7e22ce;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Social Icons */
+.social-links-simple a {
+    color: #7b2cff;
+    margin-right: 15px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-link {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .contact-card {
+        margin-top: -100px;
+        padding: 30px;
+    }
+
+    .footer-wrapper {
+        padding-top: 100px;
+        margin-top: 50px;
+    }
+}
+
+.contact-area {
+    background-color: #f9fafb;
+}
+
+.contact-box {
+    position: relative;
+    top: 100px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.line-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px 0;
+    outline: none;
+    background: transparent;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.line-input:focus {
+    border-bottom: 1px solid #7b2cff;
+}
+
+.lbl-msg {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 0;
+}
+
+.purple-icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: #f3e8ff;
+    color: #7b2cff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.social-small a {
+    color: #7b2cff;
+    margin-right: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-small a:hover {
+    color: #5b21b6;
+}
+
+.btn-purple-sub {
+    background-color: #9333ea;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-purple-sub:hover {
+    background-color: #7e22ce;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.main-footer {
+    background-color: #1f2937;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-top: 0;
+    color: #fff;
+}
+
+/* Logo Circle in Footer */
+.main-footer .logo-circle {
+    width: 40px;
+    height: 40px;
+    background: #7b2cff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.main-footer .logo-text {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-link {
+    color: #d1d5db;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+@media (max-width: 768px) {
+    .main-footer {
+        text-align: center;
+    }
 }
